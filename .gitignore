@@ -1,0 +1,60 @@
+# IDE & System
+.idea
+*.iml
+.DS_Store
+.directory
+*.swp
+*~
+/local.properties
+
+# Build Tools (Gradle)
+.gradle
+
+# Wrapper
+!gradle/wrapper/gradle-wrapper.jar
+!gradle-wrapper.jar
+
+# Kotlin & Compose Multiplatform
+composeApp/build/
+.externalNativeBuild/
+.cxx/
+shared/shared.podspec
+
+# Java & Runtime
+hs_err_pid* # Логи падения JVM
+gc.log
+
+# Database & Storage
+*.db
+*.db-journal
+
+# Security & Certificates
+*.jks
+*.keystore
+
+# Miscellaneous
+cx.json
+
+# Log files
+*.log
+
+# Sandbox stuff
+_sandbox
+Thumbs.db
+
+# Eclipse project files
+.classpath
+.project
+
+# generated files
+bin/
+gen/
+out/
+build/
+generated/
+
+# Java class files
+*.class
+
+# Kotlin
+.kotlin
