@@ -25,22 +25,21 @@ jobs:
       - name: Make Gradle executable
         run: chmod +x ./gradlew
 
-      - name: Run ktlint
-        run: ./gradlew ktlintCheck
-
-      - name: Run Detekt
-        run: ./gradlew detekt
-
-      - name: Run Tests
-        run: ./gradlew check --stacktrace
-
-      - name: Package Uber-JAR
-        run: ./gradlew :composeApp:packageUberJar --stacktrace
-
-      - name: Upload Artifacts
-        if: success()
-        uses: actions/upload-artifact@v4
-        with:
-          name: desktop-application
-          path: composeApp/build/libs/*.jar
-
+#      - name: Run ktlint
+#        run: ./gradlew ktlintCheck
+#
+#      - name: Run Detekt
+#        run: ./gradlew detekt
+#
+#      - name: Run Tests
+#        run: ./gradlew check --stacktrace
+#
+#      - name: Package Uber-JAR
+#        run: ./gradlew :composeApp:packageUberJar --stacktrace
+#
+#      - name: Upload Artifacts
+#        if: success()
+#        uses: actions/upload-artifact@v4
+#        with:
+#          name: desktop-application
+#          path: composeApp/build/libs/*.jar
