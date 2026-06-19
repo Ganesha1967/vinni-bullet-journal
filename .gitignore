@@ -14,21 +14,21 @@
 !gradle/wrapper/gradle-wrapper.jar
 !gradle-wrapper.jar
 
-# Kotlin & Compose Multiplatform
+# Kotlin
 composeApp/build/
 .externalNativeBuild/
 .cxx/
 shared/shared.podspec
 
-# Java & Runtime
+# Java
 hs_err_pid* # Логи падения JVM
 gc.log
 
-# Database & Storage
+# Database
 *.db
 *.db-journal
 
-# Security & Certificates
+# Certificates
 *.jks
 *.keystore
 
